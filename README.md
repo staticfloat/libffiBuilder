@@ -1,10 +1,5 @@
-# libffi builder
+# libffiBuilder
 
-This repository builds binary artifacts for the libffi project.
-This repository has a default .travis.yml file that can be used to build
-binary artifacts on Travis CI. You will however need to setup the release
-upload manually. See https://docs.travis-ci.com/user/deployment/releases/.
+[![Build Status](https://travis-ci.org/staticfloat/libffiBuilder.svg?branch=master)](https://travis-ci.org/staticfloat/libffiBuilder)
 
-If you don't wish to use travis, you can use the build_tarballs.jl
-file manually and upload the resulting artifacts to a hosting provider
-of your choice.
+This is an example repository showing how to construct a "builder" repository for a binary dependency.  Using a combination of [`BinaryBuilder.jl`](https://github.com/staticfloat/BinaryBuilder.jl), [Travis](https://travis-ci.org), and [GitHub releases](https://docs.travis-ci.com/user/deployment/releases/), we are able to create a fully-automated, github-hosted binary building and serving infrastructure.
